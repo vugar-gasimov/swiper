@@ -2,7 +2,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
-import { Pagination, FreeMode } from "swiper/modules";
+import "swiper/css/navigation";
+import { Pagination, FreeMode, Navigation } from "swiper";
 import { ServiceData } from "../constants";
 const ActiveSlider = () => {
   return (
