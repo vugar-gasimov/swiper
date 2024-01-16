@@ -32,11 +32,11 @@ const ActiveSlider = () => {
         freeMode={true}
         pagination={{ clickable: true, el: ".swiper-pagination" }}
         modules={{ FreeMode, Pagination }}
-        className="max-w-[100%] lg:max-w-[80%] h-[100%] "
+        className="max-w-[90%] lg:max-w-[80%] h-[100%] "
       >
         {ServiceData.map((item, index) => (
           <SwiperSlide key={item.title}>
-            <div className="flex flex-col justify-center  items-center gap-6 group relative shadow-lg text-white rounded-xl p-5 h-[340px] w-[254px]  overflow-hidden cursor-pointer  bg-[#4c5c36]">
+            <div className="flex flex-col justify-center  items-center gap-3 group relative shadow-lg text-white rounded-xl p-5 h-[340px] w-[254px]  overflow-hidden cursor-pointer  bg-[#4c5c36]">
               <div
                 className="ablosute inset-0 bg-cover bg-center h-[200px] w-[134px]"
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
