@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import { IonIcon } from "@ionic/react";
+import { arrowBackOutline, arrowForwardOutline } from "ionicons/icons";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -13,6 +14,9 @@ import { ServiceData } from "../constants";
 // import SpaceCity3 from "../assets/SpaceCity3.jpeg";
 // import SpaceCity4 from "../assets/SpaceCity4.jpeg";
 // import SpaceCity5 from "../assets/SpaceCity5.jpeg";
+interface Swiper {
+  clickable?: boolean;
+}
 
 const Slider = () => {
   return (
@@ -34,7 +38,6 @@ const Slider = () => {
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
-          clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="h-52rem py-8 relative"
@@ -61,10 +64,10 @@ const Slider = () => {
 
         <div className="slider-controller">
           <div className="swiper-button-prev  left-20 -translate-x-20 lg:left-30 lg:-translate-x-30">
-            <ion-icon name="arrow-back-outline"></ion-icon>
+            <IonIcon name="arrow-back-outline"></IonIcon>
           </div>
           <div className="swiper-button-next">
-            <ion-icon name="arrow-forward-outline"></ion-icon>
+            <IonIcon name="arrow-forward-outline"></IonIcon>
           </div>
           <div className="swiper-pagination"></div>
         </div>
