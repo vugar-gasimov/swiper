@@ -1,6 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { IonIcon } from "@ionic/react";
-import { arrowBackOutline, arrowForwardOutline } from "ionicons/icons";
+// import { arrowBackOutline, arrowForwardOutline } from "ionicons/icons";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
