@@ -65,7 +65,7 @@ const Slider = () => {
         className="h-52rem py-8 relative"
       >
         {ServiceData.map((item, index) => (
-          <SwiperSlide key={item.title} className="flex justify-center ">
+          <SwiperSlide key={item.id} className="flex justify-center ">
             {showToggleDiv ? (
               <div className="flex flex-col justify-center  items-center gap-3 group relative shadow-lg text-white rounded-xl p-5 h-[340px] w-[254px]  overflow-hidden cursor-pointer  bg-[#4c5c36]">
                 {!showFullContent[index] && (
