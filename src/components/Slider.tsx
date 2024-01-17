@@ -5,7 +5,7 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
-import Card from "./Card";
+
 import { ServiceData } from "../constants";
 
 // import SpaceCity1 from "../assets/SpaceCity1.jpg";
@@ -58,49 +58,7 @@ const Slider = () => {
             </div>
           </SwiperSlide>
         ))}
-        {/* <Card /> */}
-        {/* <SwiperSlide>
-          <img
-            className="w-[250px] h-[340px] mx-auto relative"
-            src={SpaceCity1}
-            alt="blabla"
-          />
-        </SwiperSlide> */}
-        {/* <SwiperSlide>
-          <img
-            className="w-[250px] h-[340px] mx-auto relative"
-            src={SpaceCity2}
-            alt="blabla"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="w-[250px] h-[340px] mx-auto relative"
-            src={SpaceCity3}
-            alt="blabla"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className=" w-[250px] h-[340px] mx-auto relative"
-            src={SpaceCity4}
-            alt="blabla"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="w-[250px] h-[340px] mx-auto relative"
-            src={SpaceCity5}
-            alt="blabla"
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img
-            className="w-[250px] h-[340px] mx-auto relative"
-            src={SpaceCity1}
-            alt="blabla"
-          />
-        </SwiperSlide> */}
+
         <div className="slider-controller">
           <div className="swiper-button-prev  left-20 -translate-x-20 lg:left-30 lg:-translate-x-30">
             <ion-icon name="arrow-back-outline"></ion-icon>
