@@ -6,9 +6,9 @@ import {
   RxAccessibility,
 } from "react-icons/rx";
 
-import SpaceCity1 from "../assets/SpaceCity1.jpg";
-import SpaceCity2 from "../assets/SpaceCity2.jpeg";
-import SpaceCity3 from "../assets/SpaceCity3.jpeg";
+import SpaceCity1 from "../assets/patriot.png";
+import SpaceCity2 from "../assets/patriot.png";
+import SpaceCity3 from "../assets/patriot.png";
 import SpaceCity4 from "../assets/SpaceCity4.jpeg";
 import SpaceCity5 from "../assets/SpaceCity5.jpeg";
 /*import SpaceCity6 from "../assets/SpaceCity6.jpeg";*/
