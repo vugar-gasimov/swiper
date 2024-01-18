@@ -24,3 +24,29 @@
 .swiper-3d {
   perspective: 100px;
 }
+@media screen and (max-width: 767.9px) {
+  .swiper-3d .swiper-wrapper {
+    transform-style: unset;
+  }
+  .swiper-wrapper {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 424.9px) and (max-width: 767.8px) {
+  .swiper-wrapper {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 767.7px) {
+  .swiper-wrapper {
+    width: 55%;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 767.6px) {
+  .swiper-wrapper {
+    width: 45%;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #3b4133;
+}

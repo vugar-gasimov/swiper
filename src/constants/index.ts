@@ -1,24 +1,13 @@
-import {
-  RxCrop,
-  RxDesktop,
-  RxPencil2,
-  RxReader,
-  RxAccessibility,
-} from "react-icons/rx";
-
 import SpaceCity1 from "../assets/patriot.png";
 import SpaceCity2 from "../assets/patriot.png";
 import SpaceCity3 from "../assets/patriot.png";
-import SpaceCity4 from "../assets/SpaceCity4.jpeg";
-import SpaceCity5 from "../assets/SpaceCity5.jpeg";
-/*import SpaceCity6 from "../assets/SpaceCity6.jpeg";*/
+import SpaceCity4 from "../assets/patriot.png";
+import SpaceCity5 from "../assets/patriot.png";
+import Symbol1 from "../assets/mechanized-infantry.png";
 
 interface Service {
   id: number;
-  icon: React.ComponentType<{
-    className?: string;
-  }>;
-
+  icon: string;
   title: string;
   content: string;
   backgroundImage: string;
@@ -27,58 +16,58 @@ interface Service {
 export const ServiceData: Service[] = [
   {
     id: 1,
-    icon: RxCrop,
+    icon: Symbol1,
     title: "3-тя окрема штурмова бригада",
     content:
-      "Lorem ipsum dolor sit /amet, consectetur adipiscing elitLorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+      "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
     backgroundImage: SpaceCity1,
   },
   {
     id: 2,
-    icon: RxPencil2,
+    icon: Symbol1,
     title: "3-тя окрема штурмова бригада",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+      "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
     backgroundImage: SpaceCity2,
   },
   {
     id: 3,
-    icon: RxDesktop,
+    icon: Symbol1,
     title: "3-тя окрема штурмова бригада",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+      "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
     backgroundImage: SpaceCity3,
   },
   {
     id: 4,
-    icon: RxReader,
+    icon: Symbol1,
     title: "3-тя окрема штурмова бригада",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+      "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
     backgroundImage: SpaceCity4,
   },
   {
     id: 5,
-    icon: RxAccessibility,
+    icon: Symbol1,
     title: "3-тя окрема штурмова бригада",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+      "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
     backgroundImage: SpaceCity5,
   },
   {
     id: 6,
-    icon: RxAccessibility,
+    icon: Symbol1,
     title: "3-тя окрема штурмова бригада",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+      "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
     backgroundImage: SpaceCity2,
   },
   {
     id: 7,
-    icon: RxAccessibility,
+    icon: Symbol1,
     title: "3-тя окрема штурмова бригада",
     content:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+      "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
     backgroundImage: SpaceCity3,
   },
 ];
