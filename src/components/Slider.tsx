@@ -1,6 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { IonIcon } from "@ionic/react";
-
+import { motion, useInView } from "framer-motion";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
@@ -8,12 +7,24 @@ import "swiper/css/navigation";
 import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
 import { ServiceData } from "../constants";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const Slider = () => {
+  const ref = useRef();
   const [showFullContent, setShowFullContent] = useState<
     Record<number, boolean>
   >({});
+ 
+  const variant = {
+    initial: {
+      opacity: 0,
+    },
+    animate: {
+      opacity: 1,
+      transition: { duration: 1 },
+    },
+  };
+ 
 
   const toggleContent = (index: number) => {
     setShowFullContent((prev) => ({
@@ -21,7 +32,7 @@ const Slider = () => {
       [index]: !prev[index],
     }));
   };
-
+  const isInView = useInView(ref);
   return (
     <div className=" mx-auto px-4 md:px-8 py-16 bg-[#7A8868]">
       <h2 className="text-white font-bold text-[24px]">Популярне</h2>
@@ -43,11 +54,27 @@ const Slider = () => {
           prevEl: ".swiper-button-prev",
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="h-52rem py-8 relative"
+        className="h-52rem pb-8 pt-16 relative"
       >
         {ServiceData.map((item, index) => (
-          <SwiperSlide key={item.id} className="flex justify-center ">
-            <div className="flex flex-col justify-center  items-center gap-3 group relative shadow-lg text-white rounded-xl p-5 h-[340px] w-[254px]  overflow-hidden cursor-pointer  bg-[#4c5c36]">
+          <SwiperSlide
+            key={item.id}
+            className="flex justify-center"
+        
+          >
+            
+              <motion.div className="relative top-[-65px] right-[50%]  "     variants={variant}
+            initial="initial"
+            ref={ref}
+            animate={isInView && "animate"}>
+                <img
+                  className="w-[64px] h-[64px] z-10"
+                  src={item.icon}
+                  alt="Ukrainian Armed Forces emblems"
+                />
+              </motion.div>
+            )}
+            <div className="flex flex-col justify-center  items-center gap-3 group relative shadow-lg  text-black rounded-xl p-5 max-h-[354px] w-[254px]  overflow-hidden cursor-pointer  bg-[#fff] overflow-y-auto ">
               {!showFullContent[index] && (
                 <>
                   <div
@@ -70,10 +97,7 @@ const Slider = () => {
                 </>
               )}
               {showFullContent[index] && (
-                <>
-                  <div className=" w-[64px] h-[64px]">
-                    <img src={item.icon} alt="Ukrainian Armed Forces emblems" />
-                  </div>
+                <div className="flex flex-col justify-center  items-center gap-3 p-5 h-screen">
                   <p className=" lg:text-[18px]">{item.content}</p>
                   <button
                     onClick={() => toggleContent(index)}
@@ -81,19 +105,15 @@ const Slider = () => {
                   >
                     Читати менше
                   </button>
-                </>
+                </div>
               )}
             </div>
           </SwiperSlide>
         ))}
 
         <div className="slider-controller">
-          <div className=" hidden md:block swiper-button-prev  left-20 -translate-x-20 lg:left-30 lg:-translate-x-30">
-            <IonIcon name="arrow-back-outline "></IonIcon>
-          </div>
-          <div className="hidden md:block swiper-button-next">
-            <IonIcon name="arrow-forward-outline"></IonIcon>
-          </div>
+          <div className=" hidden md:block swiper-button-prev  left-20 -translate-x-20 lg:left-30 lg:-translate-x-30"></div>
+          <div className="hidden md:block swiper-button-next"></div>
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
