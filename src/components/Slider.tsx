@@ -29,7 +29,7 @@ const Slider = () => {
   };
 
   return (
-    <div className=" mx-auto px-4 md:px-8 py-16 bg-[#7A8868]">
+    <div className=" mx-auto px-4 md:px-8 pt-16 bg-[#7A8868]">
       <h2 className="text-white font-bold text-[24px]">Популярне</h2>
       <Swiper
         effect={"coverflow"}
@@ -56,18 +56,18 @@ const Slider = () => {
             key={item.id}
             className="flex flex-col justify-center items-center gap-2"
           >
-            {showSvg[index] && (
-              <div className=" ">
+            <div className="w-[64px] h-[64px] z-10 ">
+              {showSvg[index] && (
                 <img
-                  className="w-[64px] h-[64px] z-10"
+                  className=""
                   src={item.icon}
                   alt="Ukrainian Armed Forces emblems"
                 />
-              </div>
-            )}
+              )}
+            </div>
 
             <div
-              className="flex flex-col justify-center  items-center gap-3 group relative shadow-lg  text-black rounded-xl p-5 max-h-[354px] w-[254px]  overflow-hidden cursor-pointer  bg-[#fff] overflow-y-auto "
+              className="flex flex-col justify-center  items-center gap-3 group relative shadow-lg  text-black rounded-xl p-5 max-h-[354px] w-[254px]  overflow-hidden cursor-pointer  bg-[#fff]  "
               onMouseEnter={() => toggleSvg(index, true)}
               onMouseLeave={() => toggleSvg(index, false)}
             >
@@ -80,7 +80,7 @@ const Slider = () => {
                     }}
                   />
 
-                  <div className=" absolute inset-0 bg-black opacity-10 group-hover:opacity-50" />
+                  <div className=" absolute inset-0 bg-black opacity-10 " />
                   <div className=" relative flex flex-col gap-3">
                     <p className="text-xl lg:text-2xl">{item.title}</p>
                     <button
@@ -93,11 +93,11 @@ const Slider = () => {
                 </>
               )}
               {showFullContent[index] && (
-                <div className="flex flex-col justify-center  items-center gap-3 p-5 h-screen">
+                <div className="flex flex-col  justify-start  items-center gap-3 h-screen  overflow-y-auto   mr-[-10px] pb-[50px]">
                   <p className=" lg:text-[18px]">{item.content}</p>
                   <button
                     onClick={() => toggleContent(index)}
-                    className="flex items-center justify-center gap-8 h-10 p-6 border border-solid border-primary bg-primary rounded-md text-primaryText"
+                    className="flex items-center justify-center gap-8 h-10 p-6 border border-solid border-primary bg-primary rounded-md text-primaryText absolute bottom-[20px] right-[20px] min-w-[215px]"
                   >
                     Читати менше
                   </button>

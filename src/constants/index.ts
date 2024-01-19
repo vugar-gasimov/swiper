@@ -1,4 +1,6 @@
-import SpaceCity1 from "../assets/patriot.png";
+import ImageOne from "../assets/patriot.png";
+import ImageTwo from "../assets/47-ма-бригада-маґура.png";
+import ImageThree from "../assets/92-га-бригада-івана-сірка.png";
 
 import Symbol1 from "../assets/one.svg";
 import Symbol2 from "../assets/two.svg";
@@ -19,7 +21,7 @@ export const ServiceData: Service[] = [
     title: "3-тя окрема штурмова бригада",
     content:
       "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
-    backgroundImage: SpaceCity1,
+    backgroundImage: ImageOne,
   },
   {
     id: 2,
@@ -27,7 +29,7 @@ export const ServiceData: Service[] = [
     title: "3-тя окрема штурмова бригада",
     content:
       "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
-    backgroundImage: SpaceCity1,
+    backgroundImage: ImageTwo,
   },
   {
     id: 3,
@@ -35,7 +37,7 @@ export const ServiceData: Service[] = [
     title: "3-тя окрема штурмова бригада",
     content:
       "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
-    backgroundImage: SpaceCity1,
+    backgroundImage: ImageThree,
   },
   {
     id: 4,
@@ -43,7 +45,7 @@ export const ServiceData: Service[] = [
     title: "3-тя окрема штурмова бригада",
     content:
       "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
-    backgroundImage: SpaceCity1,
+    backgroundImage: ImageOne,
   },
   {
     id: 5,
@@ -51,7 +53,7 @@ export const ServiceData: Service[] = [
     title: "3-тя окрема штурмова бригада",
     content:
       "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
-    backgroundImage: SpaceCity1,
+    backgroundImage: ImageTwo,
   },
   {
     id: 6,
@@ -59,7 +61,7 @@ export const ServiceData: Service[] = [
     title: "3-тя окрема штурмова бригада",
     content:
       "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
-    backgroundImage: SpaceCity1,
+    backgroundImage: ImageThree,
   },
   {
     id: 7,
@@ -67,6 +69,6 @@ export const ServiceData: Service[] = [
     title: "3-тя окрема штурмова бригада",
     content:
       "Мотострілецькі війська України є загальною основою та основними бойовими порядками Сухопутних військ України. Вони виконують завдання з утримання зайнятих районів,...",
-    backgroundImage: SpaceCity1,
+    backgroundImage: ImageTwo,
   },
 ];
