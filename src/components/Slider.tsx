@@ -29,7 +29,7 @@ const Slider = () => {
   };
 
   return (
-    <div className=" mx-auto px-4 md:px-8 pt-16 bg-[#7A8868]">
+    <div className=" mx-auto px-4 md:px-8 pt-[40px] pb-[20px] bg-[#7A8868]">
       <h2 className="text-white font-bold text-[24px]">Популярне</h2>
       <Swiper
         effect={"coverflow"}
